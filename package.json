@@ -1,6 +1,6 @@
 {
   "name": "lib-control-type-for-convert",
-  "version": "0.1.0",
+  "version": "0.1.0-1",
   "description": "Helper for test a data before convert in simple type",
   "keywords": [
     "Controle",
