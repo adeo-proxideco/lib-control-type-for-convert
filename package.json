@@ -1,0 +1,30 @@
+{
+  "name": "lib-control-type-for-convert",
+  "version": "0.1.0",
+  "description": "Helper for test a data before convert in simple type",
+  "keywords": [
+    "Controle",
+    "Type"
+  ],
+  "author": {
+    "name": "Lebret Rémi",
+    "email": "lebretr@gmail.com"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "dependencies": {
+    "underscore": "1.6.0",
+    "underscore.string": "2.3.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.3.0"
+  },
+  "license": "Apache License, Version 2.0",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lebretr/lib-control-type-for-convert"
+  }
+}
