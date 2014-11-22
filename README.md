@@ -13,6 +13,56 @@ __Install__
 npm install lib-control-type-for-convert
 ```
 
+__Exemples__
+===========
+```
+var _={};
+    _.ctrl=require('lib-control-type-for-convert');
+    
+_.ctrl.isString('foo') 
+=> true
+
+_.ctrl.isString('     ') 
+=> false
+
+_.ctrl.isNotEmpty('     ') 
+=> false
+
+_.ctrl.isInteger('51') 
+=> true
+
+...
+```
+
+__Results__
+===========
+
+| **Exemplex**     | **isString()** | **isInteger()** | **isNumber()** | **isBoolean()** | **isNotEmpty**
+|:-----------------|:---------------|:----------------|:---------------|:----------------|:-------------
+|'    '            | true	        |                 |                |                 | 
+|''                | true	        |                 |                |                 | 
+|'test'            | true	        |                 |                |                 | true
+|'123'             | true	        | true            | true           |                 | true
+| 123              |    	        | true            | true           |                 | true
+|'123.43'          | true	        |                 | true           |                 | true
+| 123.43           |     	        |                 | true           |                 | true
+|'123,43'          | true	        |                 |                |                 | true
+|'true'            | true	        |                 |                | true            | true
+| true             |     	        |                 |                | true            | true
+|'false'           | true	        |                 |                | true            | true
+| false            |     	        |                 |                | true            | true
+| null             |     	        |                 |                |                 | 
+| undefined        |     	        |                 |                |                 | 
+| NaN              |     	        |                 |                |                 | 
+|'{}'              | true	        |                 |                |                 | true
+| {}               |     	        |                 |                |                 | true
+|'[]'              | true	        |                 |                |                 | true
+| []               |     	        |                 |                |                 | 
+|'function(){}'    | true	        |                 |                |                 | true
+| function(){}     |     	        |                 |                |                 | true
+
+
+
 __License__
 ===========
 
