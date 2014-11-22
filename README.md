@@ -16,7 +16,7 @@ npm install lib-control-type-for-convert
 __License__
 ===========
 
-Copyright (C) 2014 Groupe Adeo / CSP Proximité Déco
+Copyright (C) 2014 Lebret Rémi / Groupe Adeo - CSP Proximité Déco
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
