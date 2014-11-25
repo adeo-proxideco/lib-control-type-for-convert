@@ -12,7 +12,15 @@ var tests=[
 	},
 	{ value:'123', message:'\'123\'', isString: true, isInteger:true, isNumber:true, isNotEmpty: true
 	},
+	{ value:' 123 ', message:'\' 123 \'', isString: true, isInteger:true, isNumber:true, isNotEmpty: true
+	},
+	{ value:'1 23', message:'\'1 23\'', isString: true, isNotEmpty: true
+	},
 	{ value:'123.43', message:'\'123.43\'', isString: true, isNumber:true, isNotEmpty: true
+	},
+	{ value:' 123.43 ', message:'\' 123.43 \'', isString: true, isNumber:true, isNotEmpty: true
+	},
+	{ value:'12 3.43', message:'\'12 3.43\'', isString: true, isNotEmpty: true
 	},
 	{ value:'123,43', message:'\'123,43\'', isString: true, isNotEmpty: true
 	},
