@@ -1,4 +1,4 @@
-#lib-control-type-for-convert [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lebretr/lib-control-type-for-convert/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![Build Status](https://travis-ci.org/lebretr/lib-control-type-for-convert.svg)](https://travis-ci.org/lebretr/lib-control-type-for-convert) [![Dependency Status](https://david-dm.org/lebretr/lib-control-type-for-convert.png)](https://david-dm.org/lebretr/lib-control-type-for-convert)
+#lib-control-type-for-convert [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lebretr/lib-control-type-for-convert/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![Build Status](https://travis-ci.org/lebretr/lib-control-type-for-convert.svg)](https://travis-ci.org/lebretr/lib-control-type-for-convert) [![Dependency Status](https://david-dm.org/adeo-proxideco/lib-control-type-for-convert.svg)](https://david-dm.org/adeo-proxideco/lib-control-type-for-convert) [![Test Coverage](https://codeclimate.com/github/adeo-proxideco/lib-control-type-for-convert/badges/coverage.svg)](https://codeclimate.com/github/adeo-proxideco/lib-control-type-for-convert)
 
 
 __About__
