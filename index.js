@@ -28,6 +28,12 @@ var _ = require('underscore');
      _.str = require('underscore.string');
 
 
+var isNumeric = function(elt,tmp){
+    if(isNaN(elt)){ return false ; }
+    if(tmp.toString()!=_.str.trim(elt)){ return false; }
+    return true;
+}
+
 exports.isString = function(elt) {
     if(Object.prototype.toString.call(elt) === '[object String]'){
         return true;
@@ -39,9 +45,7 @@ exports.isString = function(elt) {
 exports.isInteger = function(elt) {
     try{
         var tmp=parseInt(elt,10);
-        if(isNaN(elt)){ return false ; }
-        if(tmp.toString()!=_.str.trim(elt)){ return false; }
-        return true;
+        return isNumeric(elt, tmp);
     }catch(e){
         return false;
     }
@@ -50,9 +54,7 @@ exports.isInteger = function(elt) {
 exports.isNumber = function(elt) {
     try{
         var tmp=parseFloat(elt,10);
-        if(isNaN(elt)){ return false; }
-        if(tmp.toString()!=_.str.trim(elt)){ return false; }
-        return true;
+        return isNumeric(elt, tmp);
     }catch(e){
         return false;
     }
