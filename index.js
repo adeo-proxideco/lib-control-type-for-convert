@@ -25,12 +25,12 @@
 
 var _ = require('underscore');
     
-     _.str = require('underscore.string');
+    _.str = require('underscore.string');
 
 
 var isNumeric = function(elt,tmp){
-    if(isNaN(elt)){ return false ; }
-    if(tmp.toString()!==_.str.trim(elt)){ return false; }
+    if(isNaN(tmp)){ return false ; }
+    if(tmp.toString()!==_.str.trim(elt.toString())){ return false; }
     return true;
 };
 
@@ -43,21 +43,13 @@ exports.isString = function(elt) {
 };
 
 exports.isInteger = function(elt) {
-    try{
-        var tmp=parseInt(elt,10);
-        return isNumeric(elt, tmp);
-    }catch(e){
-        return false;
-    }
+    var tmp=parseInt(elt,10);
+    return isNumeric(elt, tmp);
 };
 
 exports.isNumber = function(elt) {
-    try{
-        var tmp=parseFloat(elt,10);
-        return isNumeric(elt, tmp);
-    }catch(e){
-        return false;
-    }
+    var tmp=parseFloat(elt,10);
+    return isNumeric(elt, tmp);
 };
 
 exports.isBoolean = function(elt) {
