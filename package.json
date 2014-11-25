@@ -19,7 +19,9 @@
   },
   "devDependencies": {
     "mocha": "^2.0.1",
-    "should": "^4.3.0"
+    "should": "^4.3.0",
+    "istanbul": "^0.3.2",
+    "codeclimate-test-reporter": "^0.0.4"
   },
   "license": "Apache License, Version 2.0",
   "readmeFilename": "readme.md",

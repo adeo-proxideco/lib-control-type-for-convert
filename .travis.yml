@@ -1,5 +1,5 @@
 script:
-  - "mocha test"
+  - "mocha test && istanbul cover index.js"
 
 notifications:
   email:
@@ -17,3 +17,10 @@ branches:
 cache:
   directories:
     - node_modules
+
+addons:
+  code_climate:
+    repo_token: 13d4d2c10cca65ba30dc5941a733a5432472d3480a648a795c22a9a135f143c6
+
+after_script:
+  - cat ./coverage/lcov.info | codeclimate
