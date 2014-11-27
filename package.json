@@ -1,6 +1,6 @@
 {
   "name": "lib-control-type-for-convert",
-  "version": "0.1.0-1",
+  "version": "0.2.0",
   "description": "Helper for test a data before convert in simple type",
   "keywords": [
     "Controle",
@@ -11,7 +11,7 @@
     "email": "lebretr@gmail.com"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
   },
   "dependencies": {
     "underscore": "1.6.0",
@@ -27,6 +27,6 @@
   "readmeFilename": "readme.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lebretr/lib-control-type-for-convert"
+    "url": "https://github.com/adeo-proxideco/lib-control-type-for-convert"
   }
 }
